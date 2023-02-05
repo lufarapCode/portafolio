@@ -220,7 +220,7 @@ p{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 4px;
 
 }
 .skill__container{
@@ -250,15 +250,15 @@ p{
     background: #0071e3;
 }
 .item-1{
-    width: 75%;
+    width: 95%;
     animation: csharp 2s;
 }
 .item-2{
-    width: 75%;
+    width: 90%;
     animation: java 2s;
 }
 .item-3{
-    width: 50%;
+    width: 90%;
     animation: python 2s;
 }
 .item-4{
@@ -266,11 +266,11 @@ p{
     animation: netCore 2.3s;
 }
 .item-5{
-    width: 35%;
+    width: 90%;
     animation: javascript 2.3s;
 }
 .item-6{
-    width: 35%;
+    width: 90%;
     animation: django 2.3s;
 }
 .item-7{
