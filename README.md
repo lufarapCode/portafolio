@@ -1,4 +1,4 @@
-# Personal Portafolio 
+# Portafolio 
 Web page: https://lufarapcode.github.io/portafolio/
 
-<img src="./img/portada2.PNG" alt="Portada">
+<img src="./img/portada1.PNG" alt="Portada">
