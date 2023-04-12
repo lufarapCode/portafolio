@@ -461,6 +461,15 @@ p{
     "img1 img1 img4 img5";
     gap: 10px;
 }
+
+.projects__grid2{
+    display: inline-flex;
+    height: 300px;
+    grid-template-areas:
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
 .projects__item{
     position: relative;
     width: 100%;
