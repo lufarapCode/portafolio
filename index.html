@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/portafolio-style.css">
 </head>
+
 <body>
     <header class="hero">
         <div class="container">
@@ -19,6 +20,13 @@
                 <i class="fas fa-bars"></i>   
             </button>
             <div class="nav__list" id="nav__list">
+                <a href="#" class="nav__items">Español</a>
+                <a>
+                    <label class="switch">
+                        <input type="checkbox" id="myCheck" onclick="myFunction()">
+                        <span class="slider round"></span>
+                    </label>                    
+                </a>
                 <a href="#contact" class="nav__items">Contact</a>
                 <a href="#about" class="nav__items">About me</a>
                 <a href="#experience" class="nav__items">Experience</a>
@@ -48,14 +56,34 @@
 
         <section class="presentation container" id="about">
             <img class="presentation__picture" src="img/profile-me.PNG" >
-            <h2 class="subtitle">About me</h2>
-            <p class="presentation__copy">
+            <h2 class="subtitle">About me</h2>             
+
+              
+              <!-- <label class="switch">
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <span class="slider round"></span>
+              </label> -->
+              
+            <!-- <label for="myCheck">Español:</label>  -->
+            <!-- <input type="checkbox" id="myCheck" onclick="myFunction()"> -->
+
+            <!-- <p id="text" style="display:none">Checkbox is CHECKED!</p> -->
+
+            <p class="presentation__copy" id="text_en">
                 Graduated from the Escuela Politécnica Nacional university in Computer Systems Analysis, during this university stage 
                 I have been able to gain experience developing software projects, using programming languages such as Java, Python, PHP 
                 among others, with frameworks such as Angular and Ionic and managing relational and non-relational databases. I am currently 
                 working in the Infrastructure and Support area at Produbanco, where I have learned many important things in my professional life.
                 Passionate about self-taught learning specializing in Data Science with solid knowledge in SQL, Python, Power BI and R, looking for 
                 new professional challenges.
+            </p>
+
+            <p class="presentation__copy" id="text_es" style="display:none">
+                Egresado de la Escuela Politécnica Nacional en Análisis de Sistemas Computacionales, durante esta etapa universitaria he podido ganar 
+                experiencia desarrollando proyectos de software, utilizando lenguajes de programación como Java, Python, PHP entre otros, con 
+                frameworks como Angular e Ionic y manejando relacional y bases de datos no relacionales. Actualmente me desempeño en el área de 
+                Infraestructura y Soporte de Produbanco, donde he aprendido muchas cosas importantes en mi vida profesional. Apasionado por el aprendizaje 
+                autodidacta especializado en Data Science con sólidos conocimientos en SQL, Python, Power BI y R, en busca de nuevos retos profesionales.
             </p>
             <!--<p class="presentation__copy">Graduado en la Universidad Escuela Politécnica Nacional en la carrera de Análisis de Sistemas Informáticos, durante esta etapa universitaria he podido obtener experiencia desarrollando proyectos de software, 
                 utilizando lenguajes de programación como Java, Python, PHP entre otros, con frameworks como Angular e Ionic y manejando bases de datos relacionales y no relacionales. 
@@ -70,7 +98,7 @@
             
         </section>
         
-        <section class="about container" >
+        <section class="about container" id="text_en">
             
             <h2 class="subtitle about__title">Skills</h2>
             
@@ -354,5 +382,20 @@
     </footer>
     <script src="scripts/navScript.js"></script>
     <script src="https://kit.fontawesome.com/50e2ab7d4e.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var text_es = document.getElementById("text_es");
+          var text_en = document.getElementById("text_en");
+          if (checkBox.checked == true){
+            text_es.style.display = "block";
+            text_en.style.display = "none";
+
+          }else if( checkBox.checked == false) {
+            text_es.style.display = "none";
+            text_en.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
