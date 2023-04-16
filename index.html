@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/portafolio-style.css">
 </head>
 
+
+
+
 <body>
     <header class="hero">
         <div class="container">
@@ -20,13 +23,13 @@
                 <i class="fas fa-bars"></i>   
             </button>
             <div class="nav__list" id="nav__list">
-                <a href="#" class="nav__items">Español</a>
+                <!-- <a href="#" class="nav__items">Español</a>
                 <a>
                     <label class="switch">
                         <input type="checkbox" id="myCheck" onclick="myFunction()">
                         <span class="slider round"></span>
                     </label>                    
-                </a>
+                </a> -->
                 <a href="#contact" class="nav__items">Contact</a>
                 <a href="#about" class="nav__items">About me</a>
                 <a href="#experience" class="nav__items">Experience</a>
@@ -56,7 +59,8 @@
 
         <section class="presentation container" id="about">
             <img class="presentation__picture" src="img/profile-me.PNG" >
-            <h2 class="subtitle">About me</h2>             
+            <h2 class="subtitle" id="text_en_titulo">About me</h2>             
+            <h2 class="subtitle" id="text_es_titulo" style="display: none;">Sobre mi</h2>             
 
               
               <!-- <label class="switch">
@@ -74,7 +78,7 @@
                 I have been able to gain experience developing software projects, using programming languages such as Java, Python, PHP 
                 among others, with frameworks such as Angular and Ionic and managing relational and non-relational databases. I am currently 
                 working in the Infrastructure and Support area at Produbanco, where I have learned many important things in my professional life.
-                Passionate about self-taught learning specializing in Data Science with solid knowledge in SQL, Python, Power BI and R, looking for 
+                Passionate about self-taught learning specializing in Data Science with solid knowledge in SQL, Python, Power BI and Tableau, looking for 
                 new professional challenges.
             </p>
 
@@ -83,7 +87,7 @@
                 experiencia desarrollando proyectos de software, utilizando lenguajes de programación como Java, Python, PHP entre otros, con 
                 frameworks como Angular e Ionic y manejando relacional y bases de datos no relacionales. Actualmente me desempeño en el área de 
                 Infraestructura y Soporte de Produbanco, donde he aprendido muchas cosas importantes en mi vida profesional. Apasionado por el aprendizaje 
-                autodidacta especializado en Data Science con sólidos conocimientos en SQL, Python, Power BI y R, en busca de nuevos retos profesionales.
+                autodidacta especializado en Data Science con sólidos conocimientos en SQL, Python, Power BI y Tableau, en busca de nuevos retos profesionales.
             </p>
             <!--<p class="presentation__copy">Graduado en la Universidad Escuela Politécnica Nacional en la carrera de Análisis de Sistemas Informáticos, durante esta etapa universitaria he podido obtener experiencia desarrollando proyectos de software, 
                 utilizando lenguajes de programación como Java, Python, PHP entre otros, con frameworks como Angular e Ionic y manejando bases de datos relacionales y no relacionales. 
@@ -98,14 +102,18 @@
             
         </section>
         
-        <section class="about container" id="text_en">
+        <section class="about container" >
             
-            <h2 class="subtitle about__title">Skills</h2>
+            <h2 class="subtitle about__title" id="text_en_skills">Skills</h2>
+            <h2 class="subtitle about__title" id="text_es_skills" style="display: none;">Habilidades</h2>
             
             <div class="about__skills__text">
-                <p class="about__paragraph about__paragraph--skills">During my stay at the University I have dedicated more than 
+                <p class="about__paragraph about__paragraph--skills" id="text_en_skills_des">During my stay at the University I have dedicated more than 
                     three years to the study of 
                     different programming languages ​​and applications that are at the forefront of the technological world..</p>
+                <p class="about__paragraph about__paragraph--skills" id="text_es_skills_des" style="display: none;">Durante mi estancia en la Universidad he dedicado más de
+                    tres años para el estudio de
+                    diferentes lenguajes de programación y aplicaciones que están a la vanguardia del mundo tecnológico..</p>
             </div> 
 
             <div class="skills">
@@ -246,7 +254,7 @@
             </div>
         </section>
 
-        <section class="about container">
+        <section class="about container" id="text_en_training">
             <h2 class="subtitle about__title about__title--large">Academic training</h2>
             
             <div class="about__text" id="studies">
@@ -271,6 +279,36 @@
                     <p class="heading"> January - 2021 / Current </p>
                     <p>
                         Currently educating myself in this online learning platform, specializing in the Data Science career.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about container" id="text_es_training" style="display: none;">
+            <h2 class="subtitle about__title about__title--large">Estudios realizados</h2>
+            
+            <div class="about__text" id="studies">
+                
+                <div class="about__paragraph">
+                    <p class="heading">Graduado, Escuela Politécnica Nacional</p>
+                    <p class="heading">(Febrero - 2014 / Julio - 2020)</p>
+                    <p>Durante mi estadía en la universidad me especialicé en diferentes ramas; Programación orientada a objetos 
+                        y estructuras de datos, diseño de bases de datos, ingeniería de requisitos y planificación de proyectos de software.
+                    </p>
+                </div>
+                <div class="about__paragraph about__paragraph--right">  
+                    <p class="heading">Ingles- Centro de Educación Continua, CEC EPN</p>
+                    <p class="heading">(Enero - 2016 / Julio - 2020)</p>
+                    <p>
+                        Tengo el certificado B1 obtenido en este centro de estudios.
+                        Actualmente tengo facilidad para leer, escribir y comprender a la hora de comunicarme.
+                    </p>
+                </div>
+                <div class="about__paragraph">
+                    <p class="heading">Escuela de Data Science e Inteligencia Artificial - Plazti</p>
+                    <p class="heading"> Enero - 2021 / Cursando </p>
+                    <p>
+                        Actualmente formándome en esta plataforma de aprendizaje en línea, especializándome en la carrera de Data Science.
                     </p>
                 </div>
             </div>
@@ -386,14 +424,43 @@
         function myFunction() {
           var checkBox = document.getElementById("myCheck");
           var text_es = document.getElementById("text_es");
+          var text_es_titulo = document.getElementById("text_es_titulo");
           var text_en = document.getElementById("text_en");
+          var text_es_skills_des = document.getElementById("text_es_skills_des");
+          var text_en_skills_des = document.getElementById("text_en_skills_des");
+          var text_en_skills = document.getElementById("text_en_skills");
+          var text_es_skills = document.getElementById("text_es_skills");
+
+          var text_en_training = document.getElementById("text_en_training");
+          var text_es_training = document.getElementById("text_es_training");
+
           if (checkBox.checked == true){
             text_es.style.display = "block";
+            text_es_titulo.style.display = "block";
+            text_es_skills.style.display = "block";
+            text_es_skills_des.style.display = "block";
+            text_es_training.style.display = "block";
+
+            text_en_titulo.style.display = "none";
             text_en.style.display = "none";
+            text_en_skills.style.display = "none";
+            text_en_skills_des.style.display = "none";
+            // text_en_training.style.display = "none";
 
           }else if( checkBox.checked == false) {
             text_es.style.display = "none";
+            text_es_titulo.style.display = "none";
+            text_es_skillsstyle.display = "none";
+            text_es_skills_des.style.display = "none";
+            // text_es_training.style.display = "none";
+
+
+            text_en_titulo.style.display = "block";
             text_en.style.display = "block";
+            text_en_skills.style.display = "block";
+            text_en_skills_des.style.display = "block";
+            // text_en_training.style.display = "block";
+
           }
         }
         </script>
