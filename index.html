@@ -166,57 +166,125 @@
             </div>
         </section>
         <div class="border"></div>
-
-
-        <section class="project" id="projects">
-            <div class="container">
-                <h2 class="subtitle" style="color: black;">Projects</h2>
-                <div class="projects__grid2">
-
-                    <article class="projects__item">
-                        <h3 style="text-align: center; color: aliceblue;">Data analysis with Excel</h3>
-                        <br>
-                        <img src="img/excel.png" alt="" class="projects__img">
-                        <div class="projects__hover">
-                            <h2 class="projects__title"></h2>
-                            <a href="https://lilac-zircon-864.notion.site/An-lisis-con-tableros-y-formulas-en-Excel-4c53daa89acb4d8096268ad60bfda76f" target="_blank">
-                                <i class="far fa-file-alt projects__icon"></i>
-                            </a>  
-                        </div>
-                    </article>
-
-                    <article class="projects__item">
-                        <h3 style="text-align: center; color: aliceblue;">Tableau: Data Visualization and Storytelling for Business</h3>
-                        <br>
-                        <img src="img/tablaue.png" alt="" class="projects__img">
-                        <div class="projects__hover">
-                            <h2 class="projects__title"></h2>
-                            <a href="https://public.tableau.com/app/profile/luis1959/viz/SuperStore_16814828777330/Dashboard2" target="_blank">
-                                <i class="far fa-file-alt projects__icon"></i>
-                            </a>
-                            
-                        </div>
-                    </article>
-
-                    <article class="projects__item">
-                        <h3 style="text-align: center; color: aliceblue;">API ChatGPT - Python</h3>
-                        <br>
-                        <img src="img/apichat.PNG" alt="" class="projects__img">
-                        <div class="projects__hover">
-                            <h2 class="projects__title"></h2>
-                            <a href="https://lilac-zircon-864.notion.site/API-ChatGPT-con-Python-7344dee3d8ae4a4ca2e6f0d2a5d35a88" target="_blank">
-                                <i class="far fa-file-alt projects__icon"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-
                 <!-- Aqui va otra seccion para mas proyectos -->
 
                 
             </div>
         </section>
+
+        <section class="presentation container" id="projects" >
+            <div class="hero-body">
+            <div class="container projects-wrapper is-flex f-d-col center-x">
+                <h1 class="title is-1 has-text-centered en-opt">Projects</h1>
+                <div class="all-projects is-flex center-x center-y f-d-col">
+                <div class="container projects">
+                    <div class="column project has-text-centered en-opt">
+                    <div 
+                        class="img-container" 
+                        onclick="showProject(this)" 
+                        data-title="Análisis con tableros y formulas en Excel "
+                        data-link="https://lilac-zircon-864.notion.site/An-lisis-con-tableros-y-formulas-en-Excel-4c53daa89acb4d8096268ad60bfda76f"
+                        data-desc="Excel es una herramienta capaz para analizar datos y crear informes. 
+                                El proyecto comprende las tareas de limpieza de datos, crear tablas dinámicas, graficar la información 
+                                y utilizar fórmulas avanzadas."
+                        data-tools="Aplicar fórmulas avanzadas como BuscarV y BuscarH, Limpiar bases validando datos, Analizar información con dashboards y tablas dinámicas"
+                        >
+                        <img class="project" src="img/excel.png" alt="Excel intermedio">
+                    </div>
+                    <a href="https://lilac-zircon-864.notion.site/An-lisis-con-tableros-y-formulas-en-Excel-4c53daa89acb4d8096268ad60bfda76f" class="no-deco" target="_blank">
+                    Business Intelligence con Excel
+                    </a>
+                    </div>
+
+                    <div class="column project has-text-centered es-opt">
+                    <div 
+                        class="img-container" 
+                        onclick="showProject(this)" 
+                        data-title="Visualización de Datos y Storytelling para Negocios"
+                        data-link="https://public.tableau.com/app/profile/luis1959/viz/SuperStore_16814828777330/Dashboard2"
+                        data-desc="Tableau Public es una tecnologia para hacer análisis de datos, 
+                        seguir buenas prácticas para diseñar visualizaciones y comunicar la historia o resultados que esconden los datos con 
+                        técnicas de Storytelling. Permite limpiar y explorar datos del negocio para tomar decisiones inteligentes."
+                        data-tools="Tableau Public"
+                        >
+                        <img class="project" src="img/tablaue.png" alt="Proyecto">
+                    </div>
+                    <a href="https://public.tableau.com/app/profile/luis1959/viz/SuperStore_16814828777330/Dashboard2" class="no-deco" target="_blank">
+                    Business Intelligence con Tablaue
+                    </a>
+                    </div>
+
+                    <div class="column project has-text-centered es-opt">
+                        <div 
+                            class="img-container" 
+                            onclick="showProject(this)" 
+                            data-title="Data extraction and cleansing with Python"
+                            data-link="https://github.com/lufarapCode/Fifa_WorldCup"
+                            data-desc="Applying web scraping techniques to extract data from a webpage using Python and the BeautifulSoup library.
+                            Pandas is a Python library used to perform various data cleaning techniques in a data science environment such as Anaconda and development environments like Jupyter Notebooks"
+                            data-tools="Python (Pandas), BeautifulSoup, Anaconda, Jupyter Notebooks"
+                            >
+                            <img class="project" src="img/pandas.jpeg" alt="Proyecto">
+                        </div>
+                        <a href="https://github.com/lufarapCode/Fifa_WorldCup" class="no-deco" target="_blank">
+                        Data extraction and cleansing with Python
+                        </a>
+                    </div>
+                    <div class="column project has-text-centered es-opt">
+                        <div 
+                            class="img-container" 
+                            onclick="showProject(this)" 
+                            data-title="ChatGPT API con Python"
+                            data-link="https://lilac-zircon-864.notion.site/API-ChatGPT-con-Python-7344dee3d8ae4a4ca2e6f0d2a5d35a88"
+                            data-desc="Creating a Python app using the ChatGPT API"
+                            data-tools="Python, ChatGPT API"
+                            >
+                            <img class="project" src="img/apichat.PNG" alt="Proyecto">
+                        </div>
+                        <a href="https://lilac-zircon-864.notion.site/API-ChatGPT-con-Python-7344dee3d8ae4a4ca2e6f0d2a5d35a88" class="no-deco" target="_blank">
+                            ChatGPT API con Python
+                        </a>
+                    </div>
+                    
+                    
+
+
+                </div>
+
+            </div>   
+            </div>
+            </div>
+            <div id="project-popup" class="hero project d-none">
+            <div class="hero-body is-flex center-y">
+                <a class="close project" onclick="closeProject()">&times;</a>
+                <div class="container">
+                <div class="columns">
+                    <div class="column is-two-thirds is-flex center-y">
+                    <a id="project-link" target="_blank">
+                        <img class="img-project" id="project-img">
+                    </a>
+                    </div>
+                    <div class="column project-desc">
+                    <h4 class="title is-4" id="project-name"></h4>
+                    <div class="characteristics">
+                        <div class="container">
+                        <h5 class="subtitle is-5 en-opt">Technologies</h5>
+                        <ul class="lis" id="project-list">
+                        </ul>
+                        </div>
+            
+                        <div class="container">
+                        <h5 class="subtitle is-5 en-opt">About the Project?</h5>
+                        <h6 class="subtitle is-6" id="project-desc"></h6>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
         <div class="border"></div>
 
               <!-- Projects -->
@@ -226,75 +294,140 @@
                     <h1 class="title is-1 has-text-centered en-opt">Certificates</h1>
                     <div class="all-projects is-flex center-x center-y f-d-col">
                     <div class="container projects">
-                        <div class="column project has-text-centered en-opt">
-                        <div 
-                            class="img-container" 
-                            onclick="showProject(this)" 
-                            data-title="Excel Intermedio para Analistas con Tableros y Fórmulas"
-                            data-link="https://platzi.com/p/LuisFalconi/curso/4037-excel-intermedio/diploma/detalle/"
-                            data-desc="Excel es una herramienta capaz para analizar datos y crear informes. 
-                                    El curso comprendio las tareas de limpieza de datos, crear tablas dinámicas, graficar la información 
-                                    y utilizar fórmulas avanzadas."
-                            data-tools="Aplicar fórmulas avanzadas como BuscarV y BuscarH, Limpiar bases validando datos, Analizar información con dashboards y tablas dinámicas"
-                            >
-                            <img class="project" src="img/cert1.PNG" alt="Excel intermedio">
-                        </div>
-                        <a href="https://platzi.com/p/LuisFalconi/curso/4037-excel-intermedio/diploma/detalle/" class="no-deco" target="_blank">
-                        Excel Intermedio para Analistas con Tableros y Fórmulas
-                        </a>
-                        </div>
+                        
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="Power BI - Entorno y Publicación"
+                                    data-link="https://aps.cec-epn.edu.ec/portal/index.php/datosp/ctrlconsultacursosp/cargarListaCursost_view/PTWG9RFM9V"
+                                    data-desc="Power BI - Entorno y Publicación"
+                                    data-tools="Power BI, Business Intelligence"
+                                    >
+                                    <img class="project" src="img/cert5.PNG" alt="Certificado">
+                                </div>
+                                <a href="https://aps.cec-epn.edu.ec/portal/index.php/datosp/ctrlconsultacursosp/cargarListaCursost_view/PTWG9RFM9V" class="no-deco" target="_blank">
+                                Power BI - Entorno y Publicación
+                                </a>
+                            </div>
 
-                        <div class="column project has-text-centered es-opt">
-                        <div 
-                            class="img-container" 
-                            onclick="showProject(this)" 
-                            data-title="Elegimos.pe"
-                            data-link="https://www.elegimos.pe/"
-                            data-desc="Development of a page that allows you to filter presidential, 
-                            congressional and Andean parliament candidates according to their educational 
-                            level, sex, age, number of sentences and more...💗"
-                            data-tools="Python, Django, PostgreSQL, Javascript"
-                            >
-                            <img class="project" src="img/cert2.PNG" alt="Proyecto Elegimos.pe imagen">
-                        </div>
-                        <a href="https://www.elegimos.pe/" class="no-deco" target="_blank">
-                            Proyecto Elegimos.pe
-                        </a>
-                        </div>
-                        <div class="column project has-text-centered es-opt">
-                        <div 
-                            class="img-container" 
-                            onclick="showProject(this)" 
-                            data-title="Elegimos.pe"
-                            data-link="https://www.elegimos.pe/"
-                            data-desc="Development of a page that allows you to filter presidential, 
-                            congressional and Andean parliament candidates according to their educational 
-                            level, sex, age, number of sentences and more...💗"
-                            data-tools="Python, Django, PostgreSQL, Javascript"
-                            >
-                            <img class="project" src="img/cert2.PNG" alt="Proyecto Elegimos.pe imagen">
-                        </div>
-                        <a href="https://www.elegimos.pe/" class="no-deco" target="_blank">
-                            Proyecto Elegimos.pe
-                        </a>
-                        </div>
-                        <div class="column project has-text-centered es-opt">
-                            <div 
-                                class="img-container" 
-                                onclick="showProject(this)" 
-                                data-title="Elegimos.pe"
-                                data-link="https://www.elegimos.pe/"
-                                data-desc="Development of a page that allows you to filter presidential, 
-                                congressional and Andean parliament candidates according to their educational 
-                                level, sex, age, number of sentences and more...💗"
-                                data-tools="Python, Django, PostgreSQL, Javascript"
-                                >
-                                <img class="project" src="img/cert2.PNG" alt="Proyecto Elegimos.pe imagen">
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="SQL Aplicado al Análisis de Datos"
+                                    data-link="https://aps.cec-epn.edu.ec/portal/index.php/datosp/ctrlconsultacursosp/cargarListaCursost_view/82HFSXA624"
+                                    data-desc="SQL Aplicado al Análisis de Datos"
+                                    data-tools="SQL, Business Intelligence"
+                                    >
+                                    <img class="project" src="img/cert6.PNG" alt="Certificado">
+                                </div>
+                                <a href="https://aps.cec-epn.edu.ec/portal/index.php/datosp/ctrlconsultacursosp/cargarListaCursost_view/82HFSXA624" class="no-deco" target="_blank">
+                                SQL Aplicado al Análisis de Datos
+                                </a>
                             </div>
-                            <a href="https://www.elegimos.pe/" class="no-deco" target="_blank">
-                                Proyecto Elegimos.pe
-                            </a>
+
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="Python 101 for Data Science - IBM"
+                                    data-link="https://courses.cognitiveclass.ai/certificates/425dbdeb28784e089d0a553b0da2b315"
+                                    data-desc="Python 101 for Data Science - IBM"
+                                    data-tools="Python, Pandas, Numpy, Business Intelligence"
+                                    >
+                                    <img class="project" src="img/cert2.PNG" alt="Certificado">
+                                </div>
+                                <a href="https://courses.cognitiveclass.ai/certificates/425dbdeb28784e089d0a553b0da2b315" class="no-deco" target="_blank">
+                                Python 101 for Data Science - IBM
+                                </a>
                             </div>
+                            <div class="column project has-text-centered en-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="Excel Intermedio para Analistas con Tableros y Fórmulas"
+                                    data-link="https://platzi.com/p/LuisFalconi/curso/4037-excel-intermedio/diploma/detalle/"
+                                    data-desc="Excel es una herramienta capaz para analizar datos y crear informes. 
+                                            El curso comprendio las tareas de limpieza de datos, crear tablas dinámicas, graficar la información 
+                                            y utilizar fórmulas avanzadas."
+                                    data-tools="Aplicar fórmulas avanzadas como BuscarV y BuscarH, Limpiar bases validando datos, Analizar información con dashboards y tablas dinámicas"
+                                    >
+                                    <img class="project" src="img/cert1.PNG" alt="Excel intermedio">
+                                </div>
+                                <a href="https://platzi.com/p/LuisFalconi/curso/4037-excel-intermedio/diploma/detalle/" class="no-deco" target="_blank">
+                                Excel Intermedio para Analistas con Tableros y Fórmulas
+                                </a>
+                                </div>
+        
+                                <div class="column project has-text-centered es-opt">
+                                    <div 
+                                        class="img-container" 
+                                        onclick="showProject(this)" 
+                                        data-title="Visualización de Datos y Storytelling para Negocios"
+                                        data-link="https://public.tableau.com/app/profile/luis1959/viz/SuperStore_16814828777330/Dashboard2"
+                                        data-desc="Tableau Public es una tecnologia para hacer análisis de datos, 
+                                        seguir buenas prácticas para diseñar visualizaciones y comunicar la historia o resultados que esconden los datos con 
+                                        técnicas de Storytelling. Permite limpiar y explorar datos del negocio para tomar decisiones inteligentes."
+                                        data-tools="Tableau Public"
+                                        >
+                                        <img class="project" src="img/cert7.PNG" alt="Certificado">
+                                    </div>
+                                    <a href="https://public.tableau.com/app/profile/luis1959/viz/SuperStore_16814828777330/Dashboard2" class="no-deco" target="_blank">
+                                    Business Intelligence con Tablaue
+                                    </a>
+                                    </div>
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="Git and Github"
+                                    data-link="https://platzi.com/p/LuisFalconi/curso/1557-git-github/diploma/detalle/"
+                                    data-desc="Git is the version control system widely used by the technology industry. The project involves cloning a repository and managing your projects by hosting them in your local repository and on GitHub."
+                                    data-tools="Git and Github"
+                                    >
+                                    <img class="project" src="img/cert8.PNG" alt="Certificado">
+                                </div>
+                                <a href="https://platzi.com/p/LuisFalconi/curso/1557-git-github/diploma/detalle/" class="no-deco" target="_blank">
+                                Git and GitHub
+                                </a>
+                            </div>
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="SCRUM Fundation"
+                                    data-link="https://www.credly.com/badges/e8b62ffa-cc75-4047-8d1f-f6dbc6c863b5/public_url"
+                                    data-desc="ssued by CertiProf
+                                    Scrum Foundation Professional Certificate holders have developed the entry-level skills in Scrum that endorses their fundamental knowledge in this framework. They have demonstrated an understanding of the empirical Scrum pillars of transparency, inspection, and adaptation. Their primary focus is on the work of the Sprint to make the best possible progress toward these goals."
+                                    data-tools="SCRUM"
+                                    >
+                                    <img class="project" src="img/cert9.PNG" alt="Certificado">
+                                </div>
+                                <a href="https://www.credly.com/badges/e8b62ffa-cc75-4047-8d1f-f6dbc6c863b5/public_url" class="no-deco" target="_blank">
+                                SCRUM Fundation
+                                </a>
+                            </div>
+
+                            <div class="column project has-text-centered es-opt">
+                                <div 
+                                    class="img-container" 
+                                    onclick="showProject(this)" 
+                                    data-title="Introduction to Cybersecurity"
+                                    data-link="https://www.credly.com/badges/e5ea2162-e345-47db-a35a-320b0a2efa84/linked_in_profile"
+                                    data-desc="Cybersecurity is the ongoing effort to protect these networked systems and all of the data from unauthorized use or harm. 
+                                    On a personal level, you need to safeguard your identity, your data, and your computing devices. At the corporate level, 
+                                    it is everyone’s responsibility to protect the organization’s reputation, data, and customers. At the state level,
+                                     national security, and the safety and well-being of the citizens are at stake."
+                                    data-tools="Explain the basics of being safe online, most common byber threats - attacks and vulnerabilities, How to protect oneself while online"
+                                    >
+                                    <img class="project" src="img/cert10.PNG" alt="Proyecto Elegimos.pe imagen">
+                                </div>
+                                <a href="https://www.credly.com/badges/e5ea2162-e345-47db-a35a-320b0a2efa84/linked_in_profile" class="no-deco" target="_blank">
+                                Introduction to Cybersecurity
+                                </a>
+                            </div>
+                        
 
 
                     </div>
@@ -316,13 +449,13 @@
                         <h4 class="title is-4" id="project-name"></h4>
                         <div class="characteristics">
                             <div class="container">
-                            <h5 class="subtitle is-5 en-opt">Technologies</h5>
+                            <h5 class="subtitle is-6 en-opt">Technologies</h5>
                             <ul class="lis" id="project-list">
                             </ul>
                             </div>
                 
                             <div class="container">
-                            <h5 class="subtitle is-5 en-opt">About the Project?</h5>
+                            <h5 class="subtitle is-5 en-opt"></h5>
                             <h6 class="subtitle is-6" id="project-desc"></h6>
                             </div>
                         </div>
